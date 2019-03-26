@@ -811,6 +811,7 @@ uint8_t ParseData(uint8_t *buf, uint16_t len)
 		else
 			p++;
 #else
+		//is git test
 		if(*p==0xfd && *(p+1)==0xa6 && *(p+PKT_LENGTH-1)==*(p+PKT_LENGTH-3) && *(p+PKT_LENGTH-2)==*(p+PKT_LENGTH-4))
 		{
 			g_dev_id = *(p+PKT_LENGTH-7);
